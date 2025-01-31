@@ -1,0 +1,108 @@
+body, html{
+    background-color: azure;
+    height: 100vh; /* Body take full height */
+    padding: 0; /* Eliminate padding */
+    border: 0;  /* Eliminate border */
+    /*
+        To make sure the containers is center, it must eliminate padding and 
+        border from body and height.
+    */
+    display: flex;
+    justify-content: center; /* align items - horizontally by default*/
+    align-items: center; /* align items - vertically by default.*/
+
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+#container{
+    /*background-color: bisque;*/
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    
+    width: 500px;
+
+
+}
+
+#container > #one{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    padding: 25px; 
+
+    border-top: 2px solid #8f9779;
+    border-left: 2px solid #8f9779;
+    border-right: 2px solid #8f9779;
+    border-bottom: 2px solid #8f9779;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+
+}
+
+#container > #two {
+    margin-bottom: 20px;
+    padding: 25px;
+    
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+
+    border-top: 2px solid #8f9779;
+    border-left: 2px solid #8f9779;
+    border-right: 2px solid #8f9779;
+    border-bottom: 2px solid #8f9779;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#two > p{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+#two > #number{
+    height: 50px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+
+    font-size: 25px;
+}
+
+
+#two > #convert-btn{
+    height: 50px;
+    cursor: pointer;
+    background-color: burlywood;
+    font-size: 20px;
+    
+}
+
+#container > #output {
+    display: none;
+    font-size: 25px;
+    text-align: center;
+}
+
