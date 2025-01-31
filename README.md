@@ -1,2 +1,0 @@
-# fCC
-JavaScript
